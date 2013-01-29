@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subtes BA</title>
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		body{
+			margin: 0 auto;
+			padding: 0;
+			font-family: 'Helvetica', 'sans-serif';
+			background-color: #cacaca;
+		}
+		h1{
+			position: fixed;
+			width:100%;
+			background-image: linear-gradient(#FFB60F, #FFDC73);
+			padding: 10px 0 5px;
+			left: 0;
+			top: 0;
+			margin:0;
+			text-align: center;
+		}
+		#nav{
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width:100%;
+			overflow: hidden;
+			list-style: none;
+			background-image: linear-gradient(#FFDC73, #FFB60F);
+			padding:0;
+			margin:0;
+		}
+		#nav li a{
+			float: left;
+			margin-left:1%;
+			width:32%;
+			text-align: center;
+			padding: 10px 0;
+			cursor: pointer;
+			font-weight: bold;
+			text-decoration: none;
+			color: #000;
+		}
+		/* Contenedores */
+		#tabs section{
+			overflow:scroll;
+			margin-top: 40px;
+			width:100%;	
+		}
+		h2{
+			text-align: center;
+		}
+		h3{
+			text-align: center;
+		}
+		#home ul{
+			width: 75%;
+			margin: 0 auto;
+			padding: 1%;
+			list-style: none;
+		}
+		/*#lineas li{
+			width: 100%;
+			margin-top: 5%;
+			text-align: center;
+			font-size: 25px;
+		}*/
+		.station{
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+
+	</script>
+</head>
+<body>
+	<h1>Subtes BA</h1>
+	<div id="tabs">
+		<ul id="nav">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#mapa">Mapa</a></li>
+			<li><a href="#cerca">Cerca</a></li>
+		</ul>
+
+		<section id="Home" >
+			<h2>Lineas</h2>
+			<ul>
+				<li class = "accordion">
+					<h3>Linea A</h3>
+					<div class = "station">
+						<span>Estaciones</span>
+						<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+						</ul>
+					</div>
+				</li>
+				
+				<li class = "accordion">
+					<h3>Linea B</h3>
+					<div class = "station">
+						<span>Estaciones</span>
+						<ul>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class = "accordion">
+					<h3>Linea C</h3>
+					<div class = "station">
+						<span>Estaciones</span>
+						<ul>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class = "accordion">
+					<h3>Linea D</h3>
+					<div class = "station">
+						<span>Estaciones</span>
+						<ul>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class = "accordion">
+					<h3>Linea E</h3>
+					<div class = "station">
+						<span>Estaciones</span>
+						<ul>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class = "accordion">
+					<h3>Linea H</h3>
+					<div class = "station">
+						<span>Estaciones</span>
+						<ul>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+						</ul>
+					</div>
+				</li>	
+			</ul>
+
+		<section id="mapa">
+			<h2>Mapa</h2>
+		</section><!-- MAPA -->
+
+		<section id="cerca">
+			<h2>Estaciones Cercanas</h2>
+		</section><!-- CERCA -->
+	</div>
+
+<!-- / SCRIPTS /  -->
+<script src="scripts/jquery-1.8.3.js"></script>
+<script src="scripts/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="scripts/funciones.js"></script>
+
+</body>
+</html>
