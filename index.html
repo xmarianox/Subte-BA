@@ -1,189 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Subtes BA</title>
-	<meta name="viewport" content="width=device-width">
-	<style type="text/css">
-		body{
-			margin: 0 auto;
-			padding: 0;
-			font-family: 'Helvetica', 'sans-serif';
-			background-color: #cacaca;
-		}
-		h1{
-			position: fixed;
-			width:100%;
-			background-image: linear-gradient(#FFB60F, #FFDC73);
-			padding: 10px 0 5px;
-			left: 0;
-			top: 0;
-			margin:0;
-			text-align: center;
-		}
-		#nav{
-			position: fixed;
-			bottom: 0;
-			left: 0;
-			width:100%;
-			overflow: hidden;
-			list-style: none;
-			background-image: linear-gradient(#FFDC73, #FFB60F);
-			padding:0;
-			margin:0;
-		}
-		#nav li a{
-			float: left;
-			margin-left:1%;
-			width:32%;
-			text-align: center;
-			padding: 10px 0;
-			cursor: pointer;
-			font-weight: bold;
-			text-decoration: none;
-			color: #000;
-		}
-		/* Contenedores */
-		#tabs section{
-			overflow:scroll;
-			margin-top: 40px;
-			width:100%;	
-		}
-		h2{
-			text-align: center;
-		}
-		h3{
-			text-align: center;
-		}
-		#home ul{
-			width: 75%;
-			margin: 0 auto;
-			padding: 1%;
-			list-style: none;
-		}
-		/*#lineas li{
-			width: 100%;
-			margin-top: 5%;
-			text-align: center;
-			font-size: 25px;
-		}*/
-		.station{
-			display: none;
-		}
-	</style>
-	<script type="text/javascript">
 
-	</script>
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.css" />
+	<link rel="stylesheet" href="css/layout.css">
+
+	<script src="scripts/jquery-1.8.3.js"></script>
+	<script src="scripts/funciones.js"></script>
+	<script src="scripts/jquery.mobile-1.2.0.min.js"></script>
+
 </head>
 <body>
-	<h1>Subtes BA</h1>
-	<div id="tabs">
-		<ul id="nav">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#mapa">Mapa</a></li>
-			<li><a href="#cerca">Cerca</a></li>
-		</ul>
-
-		<section id="Home" >
-			<h2>Lineas</h2>
-			<ul>
-				<li class = "accordion">
-					<h3>Linea A</h3>
-					<div class = "station">
-						<span>Estaciones</span>
-						<ul>
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-							<li>4</li>
-							<li>5</li>
-						</ul>
-					</div>
+	<!-- Home - Contiene las lista con las líneas de subtes -->
+	<div data-role="page" id="home">
+		<div data-role= "header" data-position="fixed" data-fullscreen="true">
+			<h1>Home</h1>
+		</div><!-- End Header -->
+		<div data-role="content" data-theme="c">
+			<ul id="lineas">
+				<li class="linea a">
+					<a href="data/linea-a.html" rel="external" data-transition="flip">
+						<img src="images/linea-a.jpg">
+						<h2>L&iacute;nea A</h2>
+					</a>
 				</li>
 				
-				<li class = "accordion">
-					<h3>Linea B</h3>
-					<div class = "station">
-						<span>Estaciones</span>
-						<ul>
-							<li>6</li>
-							<li>7</li>
-							<li>8</li>
-							<li>9</li>
-							<li>10</li>
-						</ul>
-					</div>
+				<li class="linea b">
+					<a href="data/linea-b.html" rel="external" data-transition="flip">
+						<img src="images/linea-b.jpg">
+						<h2>L&iacute;nea B</h2>
+					</a>
 				</li>
 
-				<li class = "accordion">
-					<h3>Linea C</h3>
-					<div class = "station">
-						<span>Estaciones</span>
-						<ul>
-							<li>6</li>
-							<li>7</li>
-							<li>8</li>
-							<li>9</li>
-							<li>10</li>
-						</ul>
-					</div>
+				<li class="linea c">
+					<a href="data/linea-c.html" rel="external" data-transition="flip">
+						<img src="images/linea-c.jpg">
+						<h2>L&iacute;nea C</h2>
+					</a>
 				</li>
 
-				<li class = "accordion">
-					<h3>Linea D</h3>
-					<div class = "station">
-						<span>Estaciones</span>
-						<ul>
-							<li>6</li>
-							<li>7</li>
-							<li>8</li>
-							<li>9</li>
-							<li>10</li>
-						</ul>
-					</div>
+				<li class="linea d">
+					<a href="data/linea-d.html" rel="external" data-transition="flip">
+						<img src="images/linea-d.jpg">
+						<h2>L&iacute;nea D</h2>
+					</a>
 				</li>
 
-				<li class = "accordion">
-					<h3>Linea E</h3>
-					<div class = "station">
-						<span>Estaciones</span>
-						<ul>
-							<li>6</li>
-							<li>7</li>
-							<li>8</li>
-							<li>9</li>
-							<li>10</li>
-						</ul>
-					</div>
+				<li class="linea e">
+					<a href="data/linea-e.html" rel="external" data-transition="flip">
+						<img src="images/linea-e.jpg">
+						<h2>L&iacute;nea E</h2>
+					</a>
 				</li>
 
-				<li class = "accordion">
-					<h3>Linea H</h3>
-					<div class = "station">
-						<span>Estaciones</span>
-						<ul>
-							<li>6</li>
-							<li>7</li>
-							<li>8</li>
-							<li>9</li>
-							<li>10</li>
-						</ul>
-					</div>
+				<li class="linea h">
+					<a href="data/linea-h.html" rel="external" data-transition="flip">
+						<img src="images/linea-h.jpg">
+						<h2>L&iacute;nea H</h2>
+					</a>
 				</li>	
-			</ul>
+			</ul><!-- End #lineas -->
+		</div><!-- End Content -->
+		<div data-role="footer" data-position="fixed" data-fullscreen="true">		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" class="ui-btn-active" data-transition="flip">Home</a></li>
+					<li><a href="#mapa" id="mapa" data-transition="flip">Mapa</a></li>
+					<li><a href="#cerca" id="cerca" data-transition="flip">Cercanas</a></li>
+				</ul>
+			</div>
+		</div><!-- End Footer -->
 
-		<section id="mapa">
-			<h2>Mapa</h2>
-		</section><!-- MAPA -->
+	</div><!-- End Home -->
 
-		<section id="cerca">
-			<h2>Estaciones Cercanas</h2>
-		</section><!-- CERCA -->
-	</div>
+	<!-- Mapa - la api de Google Maps va a funcionar en este content-->
+	<div data-role="page" id="mapa">
+		<div data-role= "header" data-position="fixed" data-fullscreen="true">
+			<h1>Mapa</h1>
+		</div>
+		
+		<div data-role="content" data-theme="c">
+			
 
-<!-- / SCRIPTS /  -->
-<script src="scripts/jquery-1.8.3.js"></script>
-<script src="scripts/jquery-ui-1.9.2.custom.min.js"></script>
-<script src="scripts/funciones.js"></script>
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-fullscreen="true">		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-transition="flip">Home</a></li>
+					<li><a href="#mapa" id="mapa" class="ui-btn-active" data-transition="flip">Mapa</a></li>
+					<li><a href="#cerca" id="cerca" data-transition="flip">Cercanas</a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- End Mapa -->
+
+	<!-- Cercanas - La api de geolocation va a trabajar en este content -->
+	<div data-role="page" id="cerca">
+		<div data-role= "header" data-position="fixed" data-fullscreen="true">
+			<h1>Cercanas</h1>
+		</div>
+		
+		<div data-role="content" data-theme="c">
+			
+
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-fullscreen="true">		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" id="home" data-transition="flip">Home</a></li>
+					<li><a href="#mapa" id="mapa" data-transition="flip">Mapa</a></li>
+					<li><a href="#cerca" id="cerca" class="ui-btn-active" data-transition="flip">Cercanas</a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- End Cercanas -->
 
 </body>
 </html>

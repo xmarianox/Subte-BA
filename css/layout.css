@@ -1,0 +1,56 @@
+/*  @ Title:  layout ; @ Client: Subtes-BA ; @ Author: Mariano Molina */
+/* Contenedores */
+#lineas{
+	margin: 42px auto 37px;
+	padding: 0;
+}
+#lineas .linea{ width: 100%; display: block; position: relative }
+#lineas .linea img{ margin-bottom: -5px; width:100% }
+#lineas .linea h2{
+	position: absolute;
+	z-index: 70;
+	bottom: -21px;
+	left: 7px;
+	color: #FFF;
+	text-shadow: 0px 0.2px #000;
+	padding: 3px 15px;
+	text-decoration: none;
+}
+/* Línea A */
+#lineas li.a{ border-bottom: 5px solid #01BFE0 }
+#lineas li.a h2{ background: #01BFE0 }
+/* Línea B */
+#lineas li.b{ border-bottom: 5px solid #FF0000 }
+#lineas li.b h2{ background: #FF0000 }
+/* Línea C */
+#lineas li.c{ border-bottom: 5px solid #0168b3 }
+#lineas li.c h2{ background: #0168b3 }
+/* Línea D */
+#lineas li.d{ border-bottom: 5px solid #008067 }
+#lineas li.d h2{ background: #008067 }
+/* Línea E */
+#lineas li.e{ border-bottom: 5px solid #6d2281 }
+#lineas li.e h2{ background: #6d2281 }
+/* Línea H */
+#lineas li.h{ border-bottom: 5px solid #ffd203 }
+#lineas li.h h2{ background: #ffd203 }
+/* Internas */
+.contenido img{
+	width: 100%;
+}
+.contenido h3{
+	text-align: center;
+}
+.contenido h4{
+	padding: 0 10px;
+}
+.contenido p{
+	padding: 10px;
+}
+.contenido ul{
+	padding: 10px;
+}
+.btn-back{
+	width: 95%;
+	margin: 10px auto;
+}
