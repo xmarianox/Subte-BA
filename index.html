@@ -3,124 +3,78 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Subtes BA</title>
-
-	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.css" />
+	<title>Subtes V_1.2</title>
+<!-- STYLES -->	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="css/layout.css">
-
-	<script src="scripts/jquery-1.8.3.js"></script>
-	<script src="scripts/funciones.js"></script>
-	<script src="scripts/jquery.mobile-1.2.0.min.js"></script>
-
+	<link rel="shortcut icon" href="favicon.ico">
+<!-- STYLES -->    
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	<script src="js/funciones.js"></script>
 </head>
 <body>
-	<!-- Home - Contiene las lista con las líneas de subtes -->
-	<div data-role="page" id="home">
-		<div data-role= "header" data-position="fixed" data-fullscreen="true">
-			<h1>L&iacute;neas</h1>
-		</div><!-- End Header -->
-		<div data-role="content" data-theme="c">
-			<ul id="lineas">
-				<li class="linea a">
-					<a href="data/linea-a.html" rel="external" data-transition="flip">
-						<img src="images/linea-a.jpg">
-						<h2>L&iacute;nea A</h2>
-					</a>
-				</li>
+<div data-role="page" id="home">
+	<div data-role="panel" id="menu">
+    	<ul>
+    		<li>Home</li>
+    		<li>Mapa</li>
+    		<li>Cercanas</li>
+    	</ul>
+	</div><!-- panel -->
+
+	<header data-role="header" data-position="fixed" data-theme="c">
+		<h1>Subtes Buenos Aires</h1>
+		<a href="#menu" class="ui-btn-right" data-icon="bars" data-iconpos="notext" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" title="Menu"><span class="ui-btn-inner"><span class="ui-btn-text">Menu</span><span class="ui-icon ui-icon-bars ui-icon-shadow">&nbsp;</span></span></a>
+	</header><!-- header -->
+
+	<div data-role="content">
+		<ul id="lineas">
+			<li class="linea a">
+				<a href="#" rel="external" data-transition="flip">
+					<img src="images/linea-a.jpg">
+					<h2>L&iacute;nea A</h2>
+				</a>
+			</li>
 				
-				<li class="linea b">
-					<a href="data/linea-b.html" rel="external" data-transition="flip">
-						<img src="images/linea-b.jpg">
-						<h2>L&iacute;nea B</h2>
-					</a>
-				</li>
+			<li class="linea b">
+				<a href="#" rel="external" data-transition="flip">
+					<img src="images/linea-b.jpg">
+					<h2>L&iacute;nea B</h2>
+				</a>
+			</li>
 
-				<li class="linea c">
-					<a href="data/linea-c.html" rel="external" data-transition="flip">
-						<img src="images/linea-c.jpg">
-						<h2>L&iacute;nea C</h2>
-					</a>
-				</li>
+			<li class="linea c">
+				<a href="#" rel="external" data-transition="flip">
+					<img src="images/linea-c.jpg">
+					<h2>L&iacute;nea C</h2>
+				</a>
+			</li>
 
-				<li class="linea d">
-					<a href="data/linea-d.html" rel="external" data-transition="flip">
-						<img src="images/linea-d.jpg">
-						<h2>L&iacute;nea D</h2>
-					</a>
-				</li>
+			<li class="linea d">
+				<a href="#" rel="external" data-transition="flip">
+					<img src="images/linea-d.jpg">
+					<h2>L&iacute;nea D</h2>
+				</a>
+			</li>
 
-				<li class="linea e">
-					<a href="data/linea-e.html" rel="external" data-transition="flip">
-						<img src="images/linea-e.jpg">
-						<h2>L&iacute;nea E</h2>
-					</a>
-				</li>
+			<li class="linea e">
+				<a href="#" rel="external" data-transition="flip">
+					<img src="images/linea-e.jpg">
+					<h2>L&iacute;nea E</h2>
+				</a>
+			</li>
 
-				<li class="linea h">
-					<a href="data/linea-h.html" rel="external" data-transition="flip">
-						<img src="images/linea-h.jpg">
-						<h2>L&iacute;nea H</h2>
-					</a>
-				</li>	
-			</ul><!-- End #lineas -->
-		</div><!-- End Content -->
-		<div data-role="footer" data-position="fixed" data-fullscreen="true">		
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" id="home" class="ui-btn-active" data-transition="flip">Home</a></li>
-					<li><a href="#mapa" id="mapa" data-transition="flip">Mapa</a></li>
-					<li><a href="#cerca" id="cerca" data-transition="flip">Cercanas</a></li>
-				</ul>
-			</div>
-		</div><!-- End Footer -->
+			<li class="linea h">
+				<a href="#" rel="external" data-transition="flip">
+					<img src="images/linea-h.jpg">
+					<h2>L&iacute;nea H</h2>
+				</a>
+			</li>	
+		</ul><!-- End #lineas -->
+	</div><!-- content -->
 
-	</div><!-- End Home -->
-
-	<!-- Mapa - la api de Google Maps va a funcionar en este content-->
-	<div data-role="page" id="mapa">
-		<div data-role= "header" data-position="fixed" data-fullscreen="true">
-			<h1>Mapa</h1>
-		</div>
-		
-		<div data-role="content" data-theme="c">
-			
-			<p>Acá va a ir un Mapa de Google Maps :)</p>
-
-		</div>
-	
-		<div data-role="footer" data-position="fixed" data-fullscreen="true">		
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" id="home" data-transition="flip">Home</a></li>
-					<li><a href="#mapa" id="mapa" class="ui-btn-active" data-transition="flip">Mapa</a></li>
-					<li><a href="#cerca" id="cerca" data-transition="flip">Cercanas</a></li>
-				</ul>
-			</div>
-		</div>
-	</div><!-- End Mapa -->
-
-	<!-- Cercanas - La api de geolocation va a trabajar en este content -->
-	<div data-role="page" id="cerca">
-		<div data-role= "header" data-position="fixed" data-fullscreen="true">
-			<h1>Cercanas</h1>
-		</div>
-		
-		<div data-role="content" data-theme="c">
-			
-			<p>Acá va a ir un Mapa con las estaciones mas proximas a tu posición ;)</p>
-
-		</div>
-	
-		<div data-role="footer" data-position="fixed" data-fullscreen="true">		
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#home" id="home" data-transition="flip">Home</a></li>
-					<li><a href="#mapa" id="mapa" data-transition="flip">Mapa</a></li>
-					<li><a href="#cerca" id="cerca" class="ui-btn-active" data-transition="flip">Cercanas</a></li>
-				</ul>
-			</div>
-		</div>
-	</div><!-- End Cercanas -->
-
+</div><!-- page -->
 </body>
 </html>
